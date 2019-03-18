@@ -1,4 +1,4 @@
-#Library Database
+# Library Database
 
 This project involved implementing singleton, state, and observer design patterns in Java. The end goal was to have a program
 that simulated how some of the back end functions in an actual library database might work. Books have a state (On the shelf,
