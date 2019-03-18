@@ -15,7 +15,7 @@ Shelved to OnLoan. If we tried that same `borrow()` call on a LibraryBook object
 
 The DatabaseManager class, and the OnLoan, Returned, and Shelved subclasses are implemented as singletons, making them
 globally accessible, and only allowing one object to be instantiated. Since we are absolutely sure that we will only ever need
-one of each of these objects (given in the project description) then a singleton pattern works well here. However, it does
+one object for each class (given in the project description) then a singleton pattern works well here. However, it does
 interfere with unit testing integrity since the unit tests will need to be ordered in order to function properly.
 
 Lastly, an Observer pattern was implemented to track the state changes of LibraryBook objects. The observers (DestObserver and
