@@ -19,7 +19,7 @@ one object for each class (given in the project description) then a singleton pa
 interfere with unit testing integrity since the unit tests will need to be ordered in order to function properly.
 
 Lastly, an Observer pattern was implemented to track the state changes of LibraryBook objects. The observers (DestObserver and
-SoureObserver) are only aware of a LibraryBook objects current state, and are only notified (and then updated) when the
+SourceObserver) are only aware of a LibraryBook objects current state, and are only notified (and then updated) when the
 LibraryBook class makes a call to `Notify()`. The observer classes are then responsible for performing any actions once
 notified, and can attach or deattach at any time. This means that the only responsibility for the LibraryBook class is to call
 `Notify()` to alert any "interested" observers that something has happened. 
