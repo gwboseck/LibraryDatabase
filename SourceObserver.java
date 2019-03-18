@@ -3,6 +3,7 @@ package hw1;
 import java.util.*;
 
 public class SourceObserver implements Observer{
+  //A SourceObserver tracks books leaving a state
 
 
     private int hash;
@@ -22,6 +23,9 @@ public class SourceObserver implements Observer{
         LBState currentState;
         LBState sourceState;
         if(!(subjectList.contains(book))) {
+            /*An observer cannot know what state the book was in before it started observing.
+              Once it starts observing, and the book makes a state change it can begin accurately
+              tracking the books state (until it is deattached) */
             System.out.println(observerName+" OBSERVED "+book.getBookName()+" LEAVING STATE: UNOBSERVED");
             subjectList.add(book);
             currentState = book.getState();

@@ -17,6 +17,7 @@ public class LibraryBook {
     private String bookName;
 
     public LibraryBook(String name) {
+        //A library book is initialized with a given name, and a starting state of shelved
         bookName = name;
         state = Shelved.getInst();
     }
@@ -28,6 +29,7 @@ public class LibraryBook {
         } else {
             state = newState;
             Notify();
+            /*All attached observers are notified of state changes here */
         }
     }
 

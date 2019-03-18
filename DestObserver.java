@@ -1,6 +1,7 @@
 package hw1;
 
 public class DestObserver implements Observer{
+    //A DestObserver tracks library books arriving at a new state
 
     private int hash;
     private String observerName;
